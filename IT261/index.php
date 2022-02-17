@@ -14,7 +14,7 @@
         <ul>
             <li><a href="website/daily.php">Switch</a></li>
             <li><a href="adder.php">Troubleshoot</a></li>
-            <li><a href="weeks/week4/celcius.php">Calculator</a></li>
+            <li><a href="calculator3.php">Calculator</a></li>
             <li><a href="">Email</a></li>
             <li><a href="">Database</a></li>
             <li><a href="">Gallery</a></li>
@@ -61,6 +61,19 @@
             <li><a href="weeks/week4/form1.php">form1.php</a>
             <li><a href="weeks/week4/form2.php">form2.php</a>
             <li><a href="weeks/week4/form3.php">form3.php</a>
+        </ul>
+        <h4>Week 5</h4>
+        <ul>
+            <li><a href="weeks/week5/currency.php">currency.php</a>
+            <li><a href="weeks/week5/currency2.php">currency2.php</a>
+            <li><a href="weeks/week5/null.php">null.php</a>
+        </ul>
+        <h4>Week 6</h4>
+        <ul>
+            <li><a href="weeks/week6/form.php">form.php</a>
+            <li><a href="weeks/week6/form2.php">form2.php</a>
+            <li><a href="weeks/week6/functions.php">functions.php</a>
+            <li><a href="weeks/week6/thx.php">thx.php</a>
         </ul>
     </aside>
 
