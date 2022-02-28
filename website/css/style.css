@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ddd;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    padding: 5px 0;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+header {
+    background: yellow;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#inner-header,
+#inner-footer {
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+#logo {
+    float: left;
+    width: 170px;
+}
+
+nav ul {
+    float: right;
+    margin-top: 30px;
+}
+
+nav li {
+    float: left;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+#wrapper {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#hero {
+    height: 300px;
+    background: #f00;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+main {
+    width:63%;
+    /* height:400px; */
+    padding: 5px;
+    margin-bottom: 20px;
+    background:lightblue;
+    float: left;
+}
+
+aside {
+    width: 35%;
+    /* height: 300px; */
+    padding: 5px;
+    background: coral;
+    float: right;
+}
+
+footer {
+    border-top: 1px solid #666;
+    height: 50px;
+    clear: both;
+    line-height: 50px;
+}
+
+footer li {
+    float: left;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.current {
+    color: red;
+}
+
+h1, h2 {
+    padding-bottom: 5px;
+}
+
+/* My form style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+}
+
+form {
+    width: 400px;
+    margin: 20px auto;
+}
+
+fieldset {
+    border: 1px solid thistle;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.error {
+    display: block;
+    color: red;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+form ul {
+    margin-left: 10px;
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+select, textarea {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 140px;
+}
