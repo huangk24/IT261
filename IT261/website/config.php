@@ -17,12 +17,12 @@ switch(THIS_PAGE) {
         $headline = 'Welcome to Daily Page';
         break;
     case 'contact.php':
-        $title = 'Thank you Page';
+        $title = 'Our Contact Page';
         $body = 'contact inner';
         $headline = 'Contact us today!';
         break;
     case 'thx.php':
-        $title = 'Our Contact Page';
+        $title = 'Thank you Page';
         $body = 'contact inner';
         $headline = 'Contact us today!';
         break;
@@ -210,7 +210,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           $_POST['comments'],
           $_POST['privacy'])) {
     
-        $to = 'huangkai990124@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email '.date('m/d/y, h i A');
         $body = '
             First name : '.$first_name.'  '.PHP_EOL.'

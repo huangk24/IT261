@@ -76,7 +76,7 @@
                 </li>
                 <li>
                     <input type="radio" name="drive" value="rear_wheel" <?php if(isset(
-                        $_POST['drive']) && $_POST['drive'] == 'rear') echo 
+                        $_POST['drive']) && $_POST['drive'] == 'rear_wheel') echo 
                         'checked = "checked" ' ; ?>>Rear Wheels Drive
                 </li>
                 <li>
@@ -93,7 +93,7 @@
                 echo 'selected = "unselected" '; ?>>Select one</option>
                 <option value="city" <?php if(isset($_POST['roads']) && $_POST['roads'] == 'city') 
                 echo 'selected = "selected" '; ?>>City</option>
-                <option value="highway" <?php if(isset($_POST['roads']) && $_POST['roads'] == 'city') 
+                <option value="highway" <?php if(isset($_POST['roads']) && $_POST['roads'] == 'highway') 
                 echo 'selected = "selected" '; ?>>Highway</option>
                 <option value="countryside" <?php if(isset($_POST['roads']) && $_POST['roads'] == 'countryside') 
                 echo 'selected = "selected" '; ?>>Countryside</option>
