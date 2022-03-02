@@ -1,0 +1,50 @@
+/* My styles for my week 8 people pages! */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: beige; 
+}
+
+#wrapper {
+    max-width: 1200px;
+    /* You will still be using the values from a 940 px grid */
+    margin: 20px auto;
+    background: lightcyan;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    float: left;
+    /* main in px = 580px */
+    /* change to percentages = 580 divided by 940 */
+    width: 61.7%;
+    background: pink;
+}
+
+aside {
+    /* your aside will have a width of 340 px divded by 940 */
+    float: right;
+    width: 36.17%;
+    background: tan;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    line-height: 60px;
+}
+
+footer li {
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+}
