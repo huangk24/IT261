@@ -163,3 +163,22 @@ textarea {
     resize: none;
     height: 140px;
 }
+
+/* gallery style */
+#gallery-main {
+    width: 100%;
+}
+
+table {
+    border: 1.2px solid lightslategrey;
+    border-collapse: collapse;
+}
+tr, td {
+    border: 1.2px solid lightslategrey;
+    text-align: center;
+}
+table img {
+    width: 450px;
+    height: 200px;
+    padding: 2px;
+}

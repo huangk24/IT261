@@ -263,3 +263,14 @@ function random_images($photos) {
     $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
     return $my_return;
 }
+
+// gallery
+
+$car_gallery['Mercedes Benz CLS 53 AMG'] = 'cls53_457 HP, 0-60 mph in 4.5s, top speed 155 mph';
+$car_gallery['Maserati Ghibli Trofeo'] = 'ghibi_580 HP, 0-60 mph in 4.0s, top speed 203 mph';
+$car_gallery['BMW M8 Competition Gran Coupe'] = 'm8com_617 HP, 0-60 mph in 3.0s, top speed 190 mph';
+$car_gallery['Porsche Macan GTS'] = 'macan_434 HP, 0-60 mph in 4.1s, top speed 159 mph';
+$car_gallery['Audi RS7 Sportback'] = 'adrs7_591 HP, 0-60 mph in 3.5s, top speed 190 mph';
+
+// variable[key] = value
+// $name                     $image
