@@ -3,7 +3,7 @@
         <ul>
             <li>Copyright <?= date('Y') ?></li>
             <li>All Rights Reserved</li>
-            <li><a href="../../index.php">Web Design by Kai</li>
+            <li><a href="../../index.php">Web Design by Kai</a></li>
             <li><a href="">HTML VALID</a></li>
             <li><a href="">CSS VALID</a></li>
         </ul>

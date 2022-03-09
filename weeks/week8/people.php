@@ -10,7 +10,7 @@
         $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) 
                  or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
-        $result = mysqli_query($iConn, $sql)  or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
+        $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
 
         // We are asking if the number of rows is greater than zero, then we will be able to see the table
         if (mysqli_num_rows($result) > 0) {
@@ -33,6 +33,7 @@
 </main>
 <aside>
     <h3>This is my aside that will be displaying random images!</h3>
+    <?php echo random_images($photos); ?>
 </aside>
 </div>
 <!-- end wrapper -->

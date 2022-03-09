@@ -15,4 +15,19 @@ function myError($myFile, $myLine, $errorMsg) {
     }
 }
 
+// random image
+$photos[0] = 'people1';
+$photos[1] = 'people2';
+$photos[2] = 'people3';
+$photos[3] = 'people4';
+$photos[4] = 'people5';
+
+function random_images($photos) {
+    $my_return = '';
+    $i = rand(0, 4);
+    $selected_image = ''.$photos[$i].'.jpg';
+    $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+    return $my_return;
+}
+
 ?>
