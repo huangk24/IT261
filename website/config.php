@@ -2,6 +2,9 @@
 // We need to define the page that we are on as the page
 
 ob_start();
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
 
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
@@ -10,6 +13,11 @@ switch(THIS_PAGE) {
         $title = 'Our Home Page';
         $body = 'home';
         $headline = 'Welcome to our Home Page';
+        break;
+    case 'about.php':
+        $title = 'Our About Page';
+        $body = 'about inner';
+        $headline = 'Welcome to About Page';
         break;
     case 'daily.php':
         $title = 'Our Daily Page';
@@ -30,6 +38,16 @@ switch(THIS_PAGE) {
         $title = 'Our Gallery Page';
         $body = 'gallery inner';
         $headline = 'Welcome to our Gallery!';
+        break;
+    case 'project.php':
+        $title = 'Our Project Page';
+        $body = 'project inner';
+        $headline = 'Welcome to our Project Page!';
+        break;
+    case 'view.php':
+        $title = 'Our View Page';
+        $body = 'view inner';
+        $headline = 'Welcome to our View Page!';
         break;
 }
 
@@ -250,15 +268,23 @@ function make_links($nav) {
 } // end function
 
 // random image
-$photos[0] = 'cls53';
-$photos[1] = 'ghibli';
-$photos[2] = 'm8c';
-$photos[3] = 'macan';
-$photos[4] = 'rs7';
+$car_photos[0] = 'car1';
+$car_photos[1] = 'car2';
+$car_photos[2] = 'car3';
+$car_photos[3] = 'car4';
+$car_photos[4] = 'car5';
+$car_photos[5] = 'car6';
+$car_photos[6] = 'car7';
+$car_photos[7] = 'car8';
+$car_photos[8] = 'car9';
+$car_photos[9] = 'car10';
+$car_photos[10] = 'car11';
+$car_photos[11] = 'car12';
 
-function random_images($photos) {
+
+function random_car_images($photos) {
     $my_return = '';
-    $i = rand(0, 4);
+    $i = rand(0, 11);
     $selected_image = ''.$photos[$i].'.jpeg';
     $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
     return $my_return;
@@ -274,3 +300,15 @@ $car_gallery['Audi RS7 Sportback'] = 'adrs7_591 HP, 0-60 mph in 3.5s, top speed 
 
 // variable[key] = value
 // $name                     $image
+
+function myError($myFile, $myLine, $errorMsg) {
+    if (defined('DEBUG') && DEBUG) {
+        echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+        echo 'Error message: <b> '.$errorMsg.'</b>';
+        die();
+    } else {
+        echo ' Houston, we have a problem!';
+        die();
+    }
+}
+

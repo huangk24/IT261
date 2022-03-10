@@ -53,6 +53,10 @@ nav li {
     max-width: 1200px;
 }
 
+#wrapper h1 {
+    text-align: center;
+}
+
 #hero {
     height: 300px;
     background: #f00;
@@ -75,6 +79,7 @@ aside {
     padding: 5px;
     background: coral;
     float: right;
+    text-align: center;
 }
 
 footer {
@@ -181,4 +186,14 @@ table img {
     width: 450px;
     height: 200px;
     padding: 2px;
+}
+
+/* project style */
+#car-wrapper {
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+#car-wrapper h3 {
+    padding-top: 10px;
 }

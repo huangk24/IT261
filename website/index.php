@@ -16,7 +16,7 @@
 
     <aside>
         <h3>This is my wonderful aside container!</h3>
-        <?php echo random_images($photos); ?>
+        <?php echo random_car_images($car_photos); ?>
     </aside>
 
     </div> <!-- end wrapper -->
