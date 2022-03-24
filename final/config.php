@@ -217,7 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
     }
 
-    if (empty($_POST['drive'])) {
+    if (empty($_POST['region'])) {
         $region_err = 'Please choose your region';
     } else {
         $region = $_POST['region'];
@@ -258,7 +258,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // our languages function!
-    function my_languagess($languages) {
+    function my_languages($languages) {
         $my_return = '';
         if (!empty($_POST['languages'])) {
             $my_return = implode(', ', $_POST['languages']);
@@ -288,7 +288,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             Phone Number : '.$phone.'  '.PHP_EOL.'
             Age Range : '.$ages.'  '.PHP_EOL.'
             Region : '.$region.'  '.PHP_EOL.'
-            Language(s) : '.my_cars($languages).'  '.PHP_EOL.'            
+            Language(s) : '.my_languages($languages).'  '.PHP_EOL.'            
             Comments : '.$comments.'  '.PHP_EOL.'
         ';
 
